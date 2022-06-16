@@ -1,27 +1,32 @@
 /* notion addevent clicker sur le des et n'avoi le choix quavec 6 chiffre*/
+/*
 
-const bouton = document.getElementById("btn");
-bouton.addEventListener("click", Myfunction);
 
 
 /*comptabiliser les points */
 
-var result = Math.floor(Math.random()* 7);
-if(result==0) result = 7;
+
+function random(){
+    var result = Math.floor(Math.random()* 7);
+    if(result==0) {
+        result = 7; }
+
+    return result;
+
+}
+
+function ly() {
+document.getElementById("des").value= random();
 
 
-function Myfunction(){
-     
-        document.getElementById("des").innerHTML= result;
-
-        if (result > 1){
+        if (random() > 1){
             document.getElementById("des").innerHTML= result;
         }
-        if (result == 1) {
+        if (random() == 1) {
             document.getElementById("des").innerHTML= "stop";
 
         }
-        if(result == 6){
+        if(random() == 6){
             document.getElementById("des").innerHTML= alert ("you win");
 
         }
