@@ -1,38 +1,32 @@
-/* notion addevent clicker sur le des et n'avoi le choix quavec 6 chiffre*/
-/*
-
-
-
-/*comptabiliser les points */
 
 
 function random(){
-    var result = Math.floor(Math.random()* 7);
-    if(result==0) {
-        result = 7; }
+    var result = Math.floor(Math.random()* 6+1);
+    
+
+    if (result===1)
+        {
+            document.write("Vous avez perdu");
+        }
+
+    if (result===6)
+        {
+            document.write("Vous avez gagné");
+        }
+
+        else {
+            document.getElementById("compteur").innerHTML = "ee";
+        }
 
     return result;
-
 }
+
 
 function ly() {
 document.getElementById("des").value= random();
 
 
-        if (random() > 1){
-            document.getElementById("des").innerHTML= result;
-        }
-        if (random() == 1) {
-            document.getElementById("des").innerHTML= "stop";
-
-        }
-        if(random() == 6){
-            document.getElementById("des").innerHTML= alert ("you win");
-
-        }
-    
-        
-    }
+}
 
 
 /*
