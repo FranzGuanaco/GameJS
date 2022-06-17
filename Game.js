@@ -15,7 +15,7 @@ function random(){
         }
 
         else {
-            document.getElementById("compteur").innerHTML = "ee";
+            document.getElementById("compteur").value = result + result;
         }
 
     return result;
