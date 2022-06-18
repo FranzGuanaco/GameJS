@@ -1,0 +1,14 @@
+.joueurs {
+    display: grid;
+    grid-template-columns: 200px 2700px;
+   
+    gap: 10px;
+    
+}
+
+.joueurs > div {
+    text-align: center;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}

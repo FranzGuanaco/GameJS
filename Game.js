@@ -1,32 +1,29 @@
 
 
 function random(){
-    var result = Math.floor(Math.random()* 6+1);
+    var result = (Math.floor(Math.random()* 6+1));
     
 
-    if (result===1)
-        {
-            document.write("Vous avez perdu");
-        }
+    document.getElementById("compteur").value = result;
 
     if (result===6)
         {
-            document.write("Vous avez gagné");
+            document.getElementById("des").value="Vous avez Gagné";
         }
 
-        else {
-            document.getElementById("compteur").value = result + result;
+     if (result===1)
+        {
+            document.getElementById("des").value="Vous avez Perdu";
         }
 
-    return result;
+        
+       
+        
+
 }
 
 
-function ly() {
-document.getElementById("des").value= random();
 
-
-}
 
 
 /*
