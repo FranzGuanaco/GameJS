@@ -1,28 +1,44 @@
-var total = 0;
 
-function random(){
+ function random(){
     var result = (Math.floor(Math.random()* 6+1));
     
-    total = result + total;
-
-
-    document.getElementById("compteur").value = result;
-    document.getElementById("compteur2").innerHTML = total;
     
-  
-    if (total>=100 )
-        {
-            document.getElementById("des").value="Vous avez Gagné";
-        }
+    return result;
 
-     if (result===1)
-        {
-            document.getElementById("des").value="Vous avez Perdu";
-        }
-
-          
-        return total;
 }
+
+var resultat = random();
+var total = 0;
+
+function myFuction() {
+    total = resultat + total;
+    return total;
+}
+
+
+
+function win(){
+
+
+            document.getElementById("compteur").value = random();
+
+           
+            
+}
+
+function winner(){
+    
+
+            document.getElementById("global").innerHTML = myFuction();
+
+            
+            
+}
+
+
+
+
+
 
  /* Player two */
  
