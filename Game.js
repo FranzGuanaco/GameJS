@@ -4,16 +4,13 @@ function random(){
     var result = (Math.floor(Math.random()* 6+1));
     
     total = result + total;
-    
-    
-    
+
 
     document.getElementById("compteur").value = result;
     document.getElementById("compteur2").innerHTML = total;
     
   
-
-    if (result===6)
+    if (total>=100 )
         {
             document.getElementById("des").value="Vous avez Gagné";
         }
@@ -23,13 +20,38 @@ function random(){
             document.getElementById("des").value="Vous avez Perdu";
         }
 
-        
-        
-        
+          
         return total;
 }
 
+ /* Player two */
+ 
+var total2 = 0;
 
+function Secondrandom(){
+
+    var result2 = (Math.floor(Math.random()* 6+1));
+    
+    total2 = result2 + total2;
+
+
+    document.getElementById("compteur_Player2").value = result2;
+    document.getElementById("compteur2_Player2").innerHTML = total2;
+    
+  
+    if (total2>=100 )
+        {
+            document.getElementById("des_round2").value="Vous avez Gagné";
+        }
+
+     if (result2===1)
+        {
+            document.getElementById("des_round2").value="Vous avez Perdu";
+        }
+
+          
+        return total2;
+}
 
 
 
