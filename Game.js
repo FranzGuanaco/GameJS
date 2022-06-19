@@ -1,10 +1,17 @@
-
+var total = 0;
 
 function random(){
     var result = (Math.floor(Math.random()* 6+1));
     
+    total = result + total;
+    
+    
+    
 
     document.getElementById("compteur").value = result;
+    document.getElementById("compteur2").innerHTML = total;
+    
+  
 
     if (result===6)
         {
@@ -17,10 +24,11 @@ function random(){
         }
 
         
-       
         
-
+        
+        return total;
 }
+
 
 
 
