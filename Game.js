@@ -1,8 +1,8 @@
-var total = 0;
+var result;
 
 function random(){
-    var result = (Math.floor(Math.random()* 6+1));   
-    total = result + total;
+    result = (Math.floor(Math.random()* 6+1));   
+    
     
     document.getElementById("compteur").value = result;
     
@@ -12,20 +12,29 @@ function random(){
             document.getElementById("compteur2").innerHTML= total;  
         }     
 
-        return total;
+        return result;
+        
 }
 
 
 
+var total = 1;
+    
 
 
-function test(){
-    document.getElementById("compteur2").innerText = total;
+ function test(){
+    
+    total = result + total;
+    
+    document.getElementById("compteur2").innerHTML = total ;
 
     if (total>=100)
         {
         document.getElementById("des").value="Vous avez Gagné";
         }    
+
+    return total;
+
 }
 
         
