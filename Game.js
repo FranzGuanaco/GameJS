@@ -8,7 +8,8 @@ function random(){
     
      if (result===1)
         {
-            document.getElementById("compteur2").innerHTML= 0;  
+            total = 0;
+            document.getElementById("compteur2").innerHTML= total;  
         }     
 
         return total;
@@ -19,7 +20,7 @@ function random(){
 
 
 function test(){
-    document.getElementById("compteur2").innerHTML = total;
+    document.getElementById("compteur2").innerText = total;
 
     if (total>=100)
         {
