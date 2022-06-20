@@ -1,90 +1,30 @@
-
- function random(){
-    var result = (Math.floor(Math.random()* 6+1));
-    
-    
-    return result;
-
-}
-
-var resultat = random();
 var total = 0;
 
-function myFuction() {
-    total = resultat + total;
-    return total;
-}
-
-
-
-function win(){
-
-
-            document.getElementById("compteur").value = random();
-
-           
-            
-}
-
-function winner(){
+function random(){
+    var result = (Math.floor(Math.random()* 6+1));   
+    total = result + total;
     
-
-            document.getElementById("global").innerHTML = myFuction();
-
-            
-            
-}
-
-
-
-
-
-
- /* Player two */
- 
-var total2 = 0;
-
-function Secondrandom(){
-
-    var result2 = (Math.floor(Math.random()* 6+1));
+    document.getElementById("compteur").value = result;
     
-    total2 = result2 + total2;
-
-
-    document.getElementById("compteur_Player2").value = result2;
-    document.getElementById("compteur2_Player2").innerHTML = total2;
-    
-  
-    if (total2>=100 )
+     if (result===1)
         {
-            document.getElementById("des_round2").value="Vous avez Gagné";
-        }
+            document.getElementById("compteur2").innerHTML= 0;  
+        }     
 
-     if (result2===1)
-        {
-            document.getElementById("des_round2").value="Vous avez Perdu";
-        }
-
-          
-        return total2;
+        return total;
 }
 
 
 
 
-/*
-Resultplayer1= resultPlayer1+i
-Math.floor(Math.random()* 7)
 
-/* if on tome sur le 1 tour de lautre joueur 
+function test(){
+    document.getElementById("compteur2").innerHTML = total;
 
-function myFuction() {
-    if (result = 1) {
-        document.getElementById("round").innerHTML= "au tour de l'autre joueur"
+    if (total>=100)
+        {
+        document.getElementById("des").value="Vous avez Gagné";
+        }    
+}
 
-    }
-    else {
-        document.getElementById("round").innerHTML= "Continuez"
-    }
-} */
-
+        
