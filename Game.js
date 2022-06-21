@@ -2,43 +2,38 @@ var result;
 
 function random(){
     result = (Math.floor(Math.random()* 6+1));   
-    
-    
-    document.getElementById("RandomNumb").value = result;
+    document.getElementById("des").value=result;
+    total = result + total;
+    document.getElementById("RandomNumb").value = total;
     
      if (result===1)
         {
             total = 0;
-            document.getElementById("compteur").innerHTML= total;  
-            document.getElementById("des").value="Vous avez Perdu";
+            document.getElementById("RandomNumb").value= 0;  
+            
             document.getElementById("Titre").innerHTML = "Au tour de Player 2" ;
         }     
 
-        return result;
-        
+        return result;    
 }
 
 
-
-var total = 1;
+var total = 0;
     
-
 
  function test(){
     document.getElementById("Titre").innerHTML = "Au tour de Player 2" ;
+    document.getElementById("RandomNumb").value= total;
     
     total = result + total;
-    
     document.getElementById("compteur").innerHTML = total ;
     
-
     if (total>=100)
         {
         document.getElementById("des").value="Vous avez Gagné";
         }    
 
     return total;
-
 }
 
 
