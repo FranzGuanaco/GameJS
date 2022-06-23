@@ -47,9 +47,9 @@ var ttal = 0;
    
    
 
-    if (total>=100)
+    if (ttal>=100)
         {
-        document.getElementById("des").value="Vous avez Gagné";
+            document.getElementById("Titre").innerHTML ="Player 1 a Gagné";
         }    
 
     return total;
@@ -108,9 +108,9 @@ var ttal2 = 0;
    
    
 
-    if (total2>=100)
+    if (ttal2>=100)
         {
-        document.getElementById("des2").value="Vous avez Gagné";
+        document.getElementById("Titre").innerHTML="Player 2 Gagné";
         }    
 
     return total2;
